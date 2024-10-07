@@ -17,6 +17,7 @@ public class ValidAnagram {
         for (int i = 0;i<m1.length;i++){
             s2+=m1[i];
         }
+
         return (s1.equals(s2))?true:false;
 
     }
