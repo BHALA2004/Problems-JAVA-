@@ -14,7 +14,7 @@ public class SnakePattern {
                 else {
                     if(flag==0){
                     count=i*n;flag=1;temp = count;}
-                    System.out.print(temp +" ");
+                    System.out.print(temp +"  ");
                     temp-=1;
                 }
             }
