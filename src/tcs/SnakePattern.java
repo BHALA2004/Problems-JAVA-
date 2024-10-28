@@ -7,14 +7,14 @@ public class SnakePattern {
             for(int j = 1;j<=n;j++){
                 if(i%2==1){
                     count+=1;
-                   System.out.print(count + " ");
+                   System.out.print(count + "  ");
                    flag=0;
 
                }
                 else {
                     if(flag==0){
                     count=i*n;flag=1;temp = count;}
-                    System.out.print(temp +"  ");
+                    System.out.print(temp +" ");
                     temp-=1;
                 }
             }
