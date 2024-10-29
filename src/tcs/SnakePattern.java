@@ -2,13 +2,13 @@ package tcs;
 
 public class SnakePattern {
     public static void main(String[] args) {
-        int count = 0;int flag = 0;int temp=0;int n = 5;
+        int count = 0;int flag = 0;int temp=0;int n = 3;
         for(int i = 1 ;i<=n;i++){
             for(int j = 1;j<=n;j++){
                 if(i%2==1){
                     count+=1;
-                   System.out.print(count + "  ");
-                   flag=0;
+                   System.out.print(count + " ");
+                   //flag=0;
 
                }
                 else {
