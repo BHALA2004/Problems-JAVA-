@@ -2,7 +2,9 @@ package ListFunctions;// Online Java Compiler
 // Use this editor to write, compile and run your Java code online
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 class LinkedListMain{
     public static void main(String[] args){
@@ -12,13 +14,10 @@ class LinkedListMain{
         ll.insertEnd(2);
         ll.insertEnd(3);
         ll.insertEnd(4);
-        ll.insertEnd(1);
-        ll.insertEnd(2);
+        ll.insertEnd(5);
+//        ll.insertEnd(2);
 
-        ll.rotate();
-        ll.middle();
-        System.out.println("Answer"+ll.pairSum());
-        ll.display();
+        
 
 
     }
