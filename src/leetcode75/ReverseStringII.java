@@ -34,7 +34,7 @@ public class ReverseStringII {
 
     }
     public static void main(String[] args) {
-        String s = "a";int k = 2;
+        String s = "vaazha";int k = 2;
         String result = reverseStr(s,k);
         System.out.println(result);
     }
