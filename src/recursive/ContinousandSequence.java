@@ -29,7 +29,6 @@ class ContinuousandSequence {
         int[] arr = {1,2,2};
         int n = arr.length;
         fun(0, arr, list, n,lists);
-        Set<ArrayList<Integer>> lists1 = new HashSet<>(lists);
-        System.out.println(lists1);
+        System.out.println(lists);
     }
 }
