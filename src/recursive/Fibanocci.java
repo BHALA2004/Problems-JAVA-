@@ -5,15 +5,13 @@ public class Fibanocci {
 
         // Time complexity = 2**n
 
-        if(n<=1){
+        if(n<2){
             return n;
         }
-        int first = fun(n-1);
-        int second = fun(n-2);
-        return first+second;
+        return fun(n-1)+fun(n-2);
     }
     public static void main(String[] args) {
-        int n = 3;
+        int n = 7;
         int res = fun(n);
         System.out.println(res);
 
