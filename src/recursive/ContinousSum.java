@@ -8,9 +8,7 @@ public class ContinousSum {
             if (s == 2) {
                 for (int i : list) {
                     System.out.print(i + " ");
-
-
-                }
+ }
                 System.out.println();
 
             }
