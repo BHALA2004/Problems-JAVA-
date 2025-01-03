@@ -33,7 +33,9 @@ public class RomenToInt {
     }
     public static int romanToInt(String s) {
         int k = 0;
+        //elso value calculate aaganum soo less than s.length
             for(int i = 0;i<s.length();i++){
+                //for avoid index out of bound but s.length-2
                     if(i<=s.length()-2 && map(s.charAt(i))<map(s.charAt(i+1))){
                     int big = map(s.charAt(i+1));
                     int small = map(s.charAt(i));
