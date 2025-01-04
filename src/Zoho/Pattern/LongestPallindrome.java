@@ -21,6 +21,22 @@ public class LongestPallindrome {
            }
 
         }
+       // return f?n+1:n;
+
+        //Non Hashing
+        int[] arr = new int[256];
+        for(int i = 0;i<s.length();i++){
+            arr[s.charAt(i)]++;
+        }
+        for(int i = 0;i<arr.length;i++){
+            if(arr[i]%2==0){
+                n+=arr[i];
+            }
+            else {
+                n+=arr[i]-1;
+                f=true;
+            }
+        }
         return f?n+1:n;
 
     }
