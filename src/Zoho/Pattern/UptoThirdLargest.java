@@ -1,6 +1,6 @@
 package Zoho.Pattern;
 
-public class SecondLargest {
+public class UptoThirdLargest {
     public static void main(String[] args) {
         int[] arr = {6,11,4,8,12,2,9,10,13,0};
         int max = Integer.MIN_VALUE;
