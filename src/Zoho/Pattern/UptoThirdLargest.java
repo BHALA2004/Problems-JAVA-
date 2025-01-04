@@ -1,5 +1,7 @@
 package Zoho.Pattern;
 
+import java.util.Arrays;
+
 public class UptoThirdLargest {
     public static void main(String[] args) {
         int[] arr = {6,11,4,8,12,2,9,10,13,0};
@@ -31,5 +33,7 @@ public class UptoThirdLargest {
         System.out.println(max);
         System.out.println(secondMax);
         System.out.println(thirdMax);
+        Arrays.sort(arr);
+        System.out.println(Arrays.toString(arr ));
     }
 }

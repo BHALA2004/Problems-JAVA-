@@ -11,7 +11,7 @@ public class Fibanocci {
         return fun(n-1)+fun(n-2);
     }
     public static void main(String[] args) {
-        int n = 7;
+        int n = 4;
         int res = fun(n);
         System.out.println(res);
 
