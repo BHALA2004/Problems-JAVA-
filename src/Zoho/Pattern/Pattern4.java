@@ -6,7 +6,7 @@ public class Pattern4 {
 
         for(int i=1;i<=n;i++)
         {
-
+            //Counter Value
             int sum=i+1;
 
             int num=temp;
