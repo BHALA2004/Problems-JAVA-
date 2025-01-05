@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class BinaryRepresentation {
     public static void main(String[] args) {
-        int n = 639;int count = 1;
+        int n = 631;int count = 1;
         int[] arr = new int[9];
         while (n>0){
             int r = n%10;

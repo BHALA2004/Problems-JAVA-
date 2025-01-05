@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class UptoThirdLargest {
     public static void main(String[] args) {
-        int[] arr = {6,11,4,8,12,2,9,10,13,0};
+        int[] arr = {5,5,5};
         int max = Integer.MIN_VALUE;
         int secondMax = Integer.MIN_VALUE;
         int thirdMax = Integer.MIN_VALUE;
@@ -14,8 +14,8 @@ public class UptoThirdLargest {
                 secondMax=max;
                 max=i;
             }
-            if(max>i){
-                if(secondMax>i){
+            if(max>=i){
+                if(secondMax>=i){
                     secondMax=secondMax;
                 }
                 else {
