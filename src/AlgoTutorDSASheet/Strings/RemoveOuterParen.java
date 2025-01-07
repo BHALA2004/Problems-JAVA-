@@ -23,6 +23,6 @@ public class RemoveOuterParen {
        String s =  "()()";
        String out = "";
        String res = removeOuterParentheses(s);
-        System.out.println(res.equals(out));
+       System.out.println(out);
     }
 }

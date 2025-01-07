@@ -6,15 +6,15 @@ import java.util.List;
 public class BasicRowFinding {
     static int count=0;
     public static void main(String[] args) {
-        routeFind(3,6);
-        System.out.println(count);
-        System.out.println(routeFindReturn(3,3));
-        ArrayList<String> list = new ArrayList<>();
-        findRoute("",3,3,list);
-        System.out.println(list);
-        System.out.println(findRoute("",3,3));
-        System.out.println(findRouteDiagonal("",3,3));
-        boolean[][] arr = {{true,true,true},{true,false,true},{true,true,true}};
+//        routeFind(3,6);
+//        System.out.println(count);
+      // System.out.println(routeFindReturn(3,3));
+//        ArrayList<String> list = new ArrayList<>();
+//        findRoute("",3,3,list);
+//        System.out.println(list);
+//        System.out.println(findRoute("",3,3));
+//        System.out.println(findRouteDiagonal("",3,3));
+        boolean[][] arr = {{true,true,true},{true,false,true},{true,true,true},{true,false,true}};
         findRouteWithRestriction("",0,0,arr);
     }
     public static void routeFind(int r,int c){

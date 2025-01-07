@@ -1,17 +1,20 @@
 package recursive.importantRecursiveProblem;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class PermuatationString {
     static Integer x  = 0;
     public static void main(String[] args) {
-        Subset("","abc");
+        Subset("","abcd");
         System.out.println(x);
         System.out.println(subsetPrintArrayList("","abc"));
         System.out.println(subsetPrintArrayListCount("","abc"));
         ArrayList<String> arrayList = new ArrayList<>();
         SubsetPassArgument("","abc",arrayList);
         System.out.println(arrayList);
+        ArrayList<String> list = new ArrayList<>();
+        GenerateParen("","(((((())))))",list);
     }
 
 
@@ -82,5 +85,32 @@ public class PermuatationString {
             count+=subsetPrintArrayListCount(first+ch+second,up.substring(1));
         }
         return count;
+    }
+
+    public static boolean Valid(String p){
+        while (p.contains("()")){
+            if(p.contains("()")){
+            p=p.replace("()","");}
+        }
+        return p.isEmpty();
+    }
+
+    public static void GenerateParen(String p,String up,ArrayList<String> list){
+        if(up.isEmpty()){
+            if(!list.contains(p) && Valid(p)){
+                list.add(p);
+            System.out.println(p);return;}
+            else {
+                return;
+            }
+        }
+
+        char ch = up.charAt(0);
+
+        for(int i = 0;i<=p.length();i++){
+            String first = p.substring(0,i);
+            String second = p.substring(i,p.length());
+            GenerateParen(first+ch+second,up.substring(1),list);
+        }
     }
 }

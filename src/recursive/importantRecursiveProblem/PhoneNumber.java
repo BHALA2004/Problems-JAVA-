@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class PhoneNumber {
     public static void main(String[] args) {
-        phoneNumber("","8");
-        //System.out.println(phoneNumberList("","23"));
+        //phoneNumber("","8");
+        System.out.println(phoneNumberList("","8"));
     }
     public static void phoneNumber(String p,String up){
         if(up.isEmpty()){
@@ -25,13 +25,13 @@ public class PhoneNumber {
         }
         else if(n==8){
             for(int i = (n-1)*3;i< n*3;i++){
-                char ch  = (char)('a'+((i-3)+1));
+                char ch  = (char)('a'+(i-2));
                 phoneNumber(p+ch,up.substring(1));
             }
         }
         else {
             for(int i = (n-1)*3;i<= n*3;i++){
-                char ch  = (char)('a'+(i-3)+1);
+                char ch  = (char)('a'+(i-2));
                 phoneNumber(p+ch,up.substring(1));
             }
         }
