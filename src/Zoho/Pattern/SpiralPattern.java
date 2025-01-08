@@ -6,16 +6,13 @@ public class SpiralPattern {
                 ;
         for(int i=n;i>1;i--)
         {
-            for(int j=n;j>i;j--)
-            {
+            for(int j = n;j>i;j--){
                 System.out.print(j+" ");
             }
-            for(int j=1;j<=2*i-1;j++)
-            {
+            for (int j = 1; j <= 2*i-1; j++) {
                 System.out.print(i+" ");
             }
-            for(int j=i+1;j<=n;j++)
-            {
+            for (int j = i+1; j <= n ; j++) {
                 System.out.print(j+" ");
             }
             System.out.println();
@@ -24,20 +21,16 @@ public class SpiralPattern {
 
         for(int i=1;i<=n;i++)
         {
-            for(int j=n;j>i;j--)
-            {
+            for(int j = n;j>i;j--){
                 System.out.print(j+" ");
             }
-            for(int j=1;j<=2*i-1;j++)
-            {
+            for (int j =  1; j <= 2*i-1 ; j++) {
                 System.out.print(i+" ");
             }
-            for(int j=i+1;j<=n;j++)
-            {
-                System.out.print(j+" ");
+            for (int j = i+1;j<=n;j++){
+            System.out.print(j+" ");
             }
             System.out.println();
-
         }
 
     }
