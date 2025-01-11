@@ -2,7 +2,7 @@ package Zoho.Pattern;
 
 public class PrintSubarrays3and4 {
     public static void main(String[] args) {
-        int n = 5   ;int ntemp=n;int i = 0;
+        int n = 41  ;int ntemp=n;int i = 0;
         for(i=0;ntemp/2>0;i++){
             ntemp=ntemp/2;
         }

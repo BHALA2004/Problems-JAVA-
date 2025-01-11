@@ -21,6 +21,6 @@ public class UpcastingExample {
         Animal animal = new Dog();  // Upcasting: Dog reference is converted to Animal reference
 
         animal.makeSound();   // Output: Dog barks
-        // animal.wagTail();  // Compilation error: Animal reference doesn't know about wagTail()
+       // animal.wagTail();  // Compilation error: Animal reference doesn't know about wagTail()
     }
 }

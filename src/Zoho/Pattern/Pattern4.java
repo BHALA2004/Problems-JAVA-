@@ -2,7 +2,7 @@ package Zoho.Pattern;
 
 public class Pattern4 {
     public static void main(String[] args) {
-        int n=5,temp=1;
+        int n=3,temp=1;
 
         for(int i=1;i<=n;i++)
         {
