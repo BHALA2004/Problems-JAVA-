@@ -2,8 +2,8 @@ package recursive.importantRecursiveProblem;
 
 public class FormNumber {
     public static void main(String[] args) {
-        //formNumber("",4);
-        formNumber("",4,4);
+        formNumber("",4);
+        formNumber("",5,2);
     }
     public static void formNumber(String p,int target,int face){
         if(target==0){
